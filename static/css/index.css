@@ -1,0 +1,72 @@
+body {
+    font-family: "Open sans";
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-image: url('../img/background2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 100px;
+}
+
+.main-logo img {
+    max-width: 100%;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.icon-social {
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-social:hover {
+    transform: scale(1.2);
+}
+
+.spotify-btn{
+    transition: transform 0.3s ease-in-out;
+}
+
+.spotify-btn:hover{
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 1100px) {
+    body{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .main-logo {
+        margin-top: 30px;
+    }
+
+    .main-logo img {
+        max-width: 50%;
+    }
+
+    .icon-container{
+        max-width: 100%;
+    }
+
+    .icon-container img{
+        max-width: 50%;
+    }
+}

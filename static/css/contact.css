@@ -1,0 +1,35 @@
+body {
+    font-family: "Open sans";
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000;
+    margin: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-image: url('../img/background2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-container {
+    flex: 0 0 auto;
+    position: relative;
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    margin-right: 90px;
+    margin-bottom: 50px;
+}
+
+.content{
+    color:#000000;
+    padding: 20px;
+}

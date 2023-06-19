@@ -1,0 +1,36 @@
+footer {
+    display: flex; 
+    align-items: center; 
+    margin-top: 300px;
+    justify-content: center;
+}
+
+.nav-footer{
+    margin-left: 50px;
+    display: flex;
+}
+
+.nav-footer nav{
+    margin-left: 100px;
+}
+
+.navigation-footer{
+    list-style: none;
+    padding: 0;
+}
+
+.navigation-footer p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.navigation-footer li {
+    margin-right: 16px;
+}
+
+.navigation-footer a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+}
