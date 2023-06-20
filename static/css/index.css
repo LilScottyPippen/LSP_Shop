@@ -104,3 +104,13 @@ iframe{
         font-size: 40px;
     }
 }
+
+@media (max-width: 650px) {
+    iframe {
+        width:300px;
+    }
+
+    .spotify-description{
+        font-size: 35px;
+    }
+}

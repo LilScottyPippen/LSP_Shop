@@ -57,6 +57,11 @@ footer .logo{
         flex-wrap: wrap;
     }
 
+    .nav-footer nav{
+        margin-left: 80px;
+    }
+    
+
     .navigation-footer h1 {
         font-size: 15px;
     }
@@ -67,5 +72,15 @@ footer .logo{
 
     .navigation-footer p {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 650px) {
+    footer .logo{
+        width: 30%;
+    }
+
+    .nav-footer nav{
+        margin-left: 40px;
     }
 }
