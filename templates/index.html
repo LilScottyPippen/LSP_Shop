@@ -38,7 +38,7 @@
     </header>
     <main>
       <div class="fullscreen-overlay" id="fullscreenOverlay">
-        <div class="content">
+        <div class="sidebar-content">
           <div class="mobile-content-header">
             <img src="https://drive.google.com/uc?id=1Hh1sEgy4wRk8E_dG9eDBuZFSDv5hC8se" alt="Логотип" class="logo" style="width: 60px;" onclick="window.location.href='../templates/index.html'">
             <svg style="float: right;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeButton">
@@ -51,6 +51,7 @@
               <li><p onclick="window.location='../templates/shop.html'">Магазин</p></li>
               <li><p onclick="window.location='../templates/concert.html'">Концерты</p></li>
               <li><p onclick="window.location='../templates/contact.html'">Контакты</p></li>
+              <li><p onclick="window.location='../templates/profile.html'">Личный кабинет</p></li>
             </ul>
           </nav>
           <div class="mobile-content-footer">
@@ -106,19 +107,5 @@
       </div>
     </footer>
 </body>
-<script>
-  const openButton = document.getElementById('openButton');
-  const closeButton = document.getElementById('closeButton');
-  const fullscreenOverlay = document.getElementById('fullscreenOverlay');
-
-  openButton.addEventListener('click', function() {
-    fullscreenOverlay.classList.remove('fullscreen-inactive');
-    fullscreenOverlay.classList.toggle('fullscreen-active');
-  });
-
-  closeButton.addEventListener('click', function(){
-    fullscreenOverlay.classList.remove('fullscreen-active');
-    fullscreenOverlay.classList.toggle('fullscreen-inactive');
-  })
-</script>
+<script src="../static/js/sidebar.js"></script>
 </html>

@@ -1,3 +1,7 @@
+.sidebar{
+    display: none;
+}
+
 .fullscreen-overlay {
     display: none;
     position: fixed;
@@ -7,7 +11,7 @@
     height: 100%;
     background-color: black;
     z-index: 9999;
-  }
+}
 
 .sidebar-content {
     position: absolute;
@@ -15,9 +19,6 @@
     left: 0;
     width: 80%;
     height: 100%;
-    background-color: #fff;
-    color: #000;
-    overflow: hidden;
 }
   
 .fullscreen-active {
@@ -37,7 +38,7 @@
     font-size: 25px;
 }
 
-.content{
+.sidebar-content{
     padding: 30px;
 }
 
@@ -48,4 +49,10 @@
     position: fixed;
     bottom: 0;
     width: 90%;
+}
+
+@media (max-width: 1100px) {
+    .sidebar{
+        display: flex;
+    }
 }
