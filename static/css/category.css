@@ -3,9 +3,8 @@ body {
     font-weight: bold;
     color: #fff;
     background-color: #000000;
-    margin: 0;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 35px;
+    margin-right: 35px;
     background-image: url('https://drive.google.com/uc?id=1idfiVXp_CUfWUADeSTXLAAkpB3r0VNW3');
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -46,7 +45,7 @@ main {
 .content p {
     flex: 0;
     margin: 0;
-    padding-top: 10px;
+    padding: 10px;
     color: #000000;
 }
 
@@ -70,13 +69,34 @@ main {
 }
 
 .category-footer {
-    height: 50px;
+    height: auto;
 }
   
 .cart-image {
     width: 30px;
     height: 30px;
-    border-radius: 0;
 }
-  
+
+@media (max-width: 1100px) {
+    .category-container {
+        margin-right: 10px;
+        width: 140px;
+    }
+
+    .content p{
+        font-size: 10px;
+    }
+
+    .content button {
+        font-size: 10px;
+    }
+
+    .content button {
+        font-size: 10px;
+    }
+
+    .concert-btn:hover{
+        transform: scale(0.8);
+    }
+} 
   
