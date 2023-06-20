@@ -45,9 +45,8 @@ main{
 }
 
 @media (max-width: 1100px) {
-
     .contact-container {
-        width: 150px;
+        width: 135px;
         height: auto;
         margin: 0 10px 10px 0;
     }

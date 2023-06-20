@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../static/css/profile.css">
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/sidebar.css">
 </head>
 <body>
     <header style="padding: 20px;">
@@ -28,9 +29,37 @@
           <p style="color: #fff; font-size: 20px; margin-right: 20px;">0₽</p>
           <a href="../templates/profile.html" class="profile-icon"><img src="https://drive.google.com/uc?id=1IYTajJ87q9cucSeXSfdbsZsS_OEG_kGD" alt="Профиль" style="width: 40px;"></a>
         </div>
+        <div class="sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-justify-right" viewBox="0 0 16 16" id="openButton">
+            <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
     </header>
 
     <main>
+        <div class="fullscreen-overlay" id="fullscreenOverlay">
+            <div class="sidebar-content">
+              <div class="mobile-content-header">
+                <img src="https://drive.google.com/uc?id=1Hh1sEgy4wRk8E_dG9eDBuZFSDv5hC8se" alt="Логотип" class="logo" style="width: 60px;" onclick="window.location.href='../templates/index.html'">
+                <svg style="float: right;" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16" id="closeButton">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </div>
+              <nav>
+                <ul class="mobile-navigation">
+                  <li><p onclick="window.location='../templates/index.html'">Главная</p></li>
+                  <li><p onclick="window.location='../templates/shop.html'">Магазин</p></li>
+                  <li><p onclick="window.location='../templates/concert.html'">Концерты</p></li>
+                  <li><p onclick="window.location='../templates/contact.html'">Контакты</p></li>
+                  <li><p onclick="window.location='../templates/profile.html'">Личный кабинет</p></li>
+                </ul>
+              </nav>
+              <div class="mobile-content-footer">
+                <a href="../templates/cart.html" class="cart-icon"><img src="https://drive.google.com/uc?id=1jT3XRcriNJOa1ByymLdVV0-U9hiTLCP2" alt="Корзина" style="width: 40px; margin-right: 5px;"></a>
+                <p style="color: #fff; font-size: 20px; margin-right: 20px;">0₽</p>
+              </div>
+            </div>
+          </div>
         <div class="profile-container">
             <p class="user-email">lspofficial@yandex.ru</p>
             <div class="history-order">
@@ -122,8 +151,8 @@
         </div>
     </main>    
 
-    <footer style="margin-top: 200px; height: 300px;">
-        <img src="https://drive.google.com/uc?id=1Hh1sEgy4wRk8E_dG9eDBuZFSDv5hC8se" alt="Логотип" class="logo" style="width: 10%;">
+    <footer>
+        <img src="https://drive.google.com/uc?id=1Hh1sEgy4wRk8E_dG9eDBuZFSDv5hC8se" alt="Логотип" class="logo">
         <div class="nav-footer">
           <nav>
             <ul class="navigation-footer">
@@ -154,5 +183,20 @@
           </nav>
         </div>
       </footer>
-</body>
-</html>
+  </body>
+  <script>
+    const openButton = document.getElementById('openButton');
+    const closeButton = document.getElementById('closeButton');
+    const fullscreenOverlay = document.getElementById('fullscreenOverlay');
+  
+    openButton.addEventListener('click', function() {
+        fullscreenOverlay.classList.remove('fullscreen-inactive');
+        fullscreenOverlay.classList.toggle('fullscreen-active');
+    });
+  
+    closeButton.addEventListener('click', function(){
+        fullscreenOverlay.classList.remove('fullscreen-active');
+        fullscreenOverlay.classList.toggle('fullscreen-inactive');
+    })
+  </script>
+  </html>
