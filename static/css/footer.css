@@ -5,6 +5,10 @@ footer {
     justify-content: center;
 }
 
+footer .logo{
+    width: 10%;
+}
+
 .nav-footer{
     margin-left: 50px;
     display: flex;
@@ -35,4 +39,33 @@ footer {
     text-decoration: none;
     margin: 5px;
     cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+
+    footer{
+        margin-top: 50px;
+    }
+
+    footer .logo{
+        width: 18%;
+    }
+
+    .nav-footer{
+        margin-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navigation-footer h1 {
+        font-size: 15px;
+    }
+
+    .navigation-footer li {
+        margin-right: 0px;
+    }
+
+    .navigation-footer p {
+        font-size: 13px;
+    }
 }
