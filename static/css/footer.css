@@ -19,7 +19,7 @@ footer {
     padding: 0;
 }
 
-.navigation-footer p {
+.navigation-footer h1 {
     font-size: 25px;
     margin: 0;
 }
@@ -28,9 +28,11 @@ footer {
     margin-right: 16px;
 }
 
-.navigation-footer a {
+.navigation-footer p {
     color: #fff;
     font-size: 18px;
     font-weight: 100;
     text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
 }
