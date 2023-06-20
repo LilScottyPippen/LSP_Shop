@@ -20,6 +20,10 @@
     width: 80%;
     height: 100%;
 }
+
+.sidebar-content p{
+    padding: 5px;
+}
   
 .fullscreen-active {
     display: block;
