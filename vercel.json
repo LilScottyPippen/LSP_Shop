@@ -23,10 +23,6 @@
         "dest": "/static/css/$1"
       },
       {
-        "src": "/static/img/(.*)",
-        "dest": "/static/img/$1"
-      },
-      {
         "src": "/templates/(.*)",
         "dest": "/templates/$1"
       },
