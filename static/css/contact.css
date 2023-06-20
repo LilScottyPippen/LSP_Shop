@@ -4,8 +4,8 @@ body {
     color: #fff;
     background-color: #000000;
     margin: 0;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 25px;
+    margin-right: 25px;
     background-image: url('https://drive.google.com/uc?id=1idfiVXp_CUfWUADeSTXLAAkpB3r0VNW3');
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -29,7 +29,38 @@ main{
     margin-bottom: 50px;
 }
 
+.contact-info{
+    font-size: 20px; font-weight: 100; font-style: italic; margin: 0; padding-top: 10px; color: #2063C8;
+}
+
+.contact-header{
+    font-size: 20px; 
+    margin: 0;
+}
+
+
 .content{
     color:#000000;
     padding: 20px;
+}
+
+@media (max-width: 1100px) {
+
+    .contact-container {
+        width: 150px;
+        height: auto;
+        margin: 0 10px 10px 0;
+    }
+
+    .content p{
+        font-size: 10px;
+    }
+
+    .contact-info{
+        font-size: 10px;
+    }
+
+    .contact-header{
+        font-size: 25px; 
+    }
 }

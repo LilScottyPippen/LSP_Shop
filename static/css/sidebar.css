@@ -2,6 +2,10 @@
     display: none;
 }
 
+p{
+    margin: 0;
+}
+
 .fullscreen-overlay {
     display: none;
     position: fixed;
