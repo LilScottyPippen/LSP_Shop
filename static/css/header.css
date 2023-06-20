@@ -68,4 +68,8 @@ header {
     .icons {
         display: none;
     }
+
+    .sidebar{
+        display: flex;
+    }
 }
